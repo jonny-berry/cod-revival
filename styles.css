@@ -47,11 +47,20 @@ img {
   margin: 15% 0;
 }
 
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
+h1,
+h2 {
+  text-align: center; 
   font-weight: 800;
 }
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
 
 .highlight {
   color: var(--dark-grey);
@@ -59,4 +68,14 @@ h1 {
   padding: 0 2%;
   border: 2px dashed var(--dark-grey);
   display: inline;
+}
+
+.info-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  grid-template: 1fr 1fr / 1fr;
+  gap: 10%;
 }
