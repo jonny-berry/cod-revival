@@ -1,0 +1,62 @@
+@import url("https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.css");
+
+:root {
+  --dark-grey: #0A0A0A;
+  --accent-grey: #3A3A3A;
+  --highlighter-yellow: #FBF719;
+  line-height: 1.5;
+}
+
+* {
+  color: white;
+  font-family: 'Phudu';
+}
+
+body {
+  margin: 10% 2%;
+  background-color: var(--dark-grey);
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* End global */
+
+.section-divider {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 100vw;
+  border: 1px dashed var(--accent-grey);
+  margin: 15% 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.highlight {
+  color: var(--dark-grey);
+  background-color: var(--highlighter-yellow);
+  padding: 0 2%;
+  border: 2px dashed var(--dark-grey);
+  display: inline;
+}
