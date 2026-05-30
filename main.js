@@ -1,5 +1,7 @@
 import { supabase } from './supabase.js';
 
+const rsvpCount = document.querySelector('.rsvp-count');
+
 document.querySelector('.rsvp-form').addEventListener('submit', async (e) => {
   e.preventDefault();
 
@@ -10,9 +12,13 @@ document.querySelector('.rsvp-form').addEventListener('submit', async (e) => {
     .from('rsvp_users')
     .insert({ name, email })
 
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('submitted', data);
-  }
+    // Update total RSVP display on form submission
+    if (!error) {
+      let currentCount = parseInt(rsvpCount.innerText);
+      currentCount++;
+      rsvpCount.innerText = currentCount.toString();
+
+      const rsvpButton  = document.querySelector('.rsvp-button');
+      rsvpButton.innerText = 'RSVP Successful ✔️';
+    }
 })
