@@ -13,7 +13,7 @@
 }
 
 body {
-  margin: 25% 3%;
+  margin: 27% 3% 25% 3%;
   background-color: var(--dark-grey);
 }
 
@@ -103,6 +103,23 @@ h2 {
   padding: 0 2%;
   border: 2px dashed var(--dark-grey);
   display: inline;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  justify-self: center;
+  height: 3rem;
+  width: 100vw;
+  padding: 0 0 1% 0;
+  position: absolute;
+  background-color: black;
+}
+
+.header-logo {
+  height: 1.3rem;
 }
 
 .info-section {
