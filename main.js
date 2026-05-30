@@ -5,6 +5,11 @@ const rsvpCount = document.querySelector('.rsvp-count');
 document.querySelector('.rsvp-form').addEventListener('submit', async (e) => {
   e.preventDefault();
 
+  if (localStorage.getItem('rsvpSubmitted')) {
+    alert('You have already RSVPd');
+    return;
+  }
+
   const name = document.querySelector('#first_name').value;
   const email = document.querySelector('#email').value;
 
@@ -14,6 +19,8 @@ document.querySelector('.rsvp-form').addEventListener('submit', async (e) => {
 
     // Update total RSVP display on form submission
     if (!error) {
+      localStorage.setItem('rsvpSubmitted', 'true');
+      
       let currentCount = parseInt(rsvpCount.innerText);
       currentCount++;
       rsvpCount.innerText = currentCount.toString();
