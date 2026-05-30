@@ -44,9 +44,8 @@ button {
 
 .section-divider {
   display: flex;
-  justify-self: center;
-  align-self: center;
-  width: 100vw;
+  overflow: hidden;
+  width: 100%;
   border: 1px dashed var(--accent-grey);
   margin: 15% 0;
 }
@@ -109,13 +108,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  left: 0;
+  right: 0;
   top: 0;
   justify-self: center;
   height: 3rem;
-  width: 100vw;
+  width: 100%;
   padding: 0 0 1% 0;
   position: absolute;
   background-color: black;
+  overflow: hidden;
 }
 
 .header-logo {
