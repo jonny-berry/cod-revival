@@ -104,6 +104,10 @@ h2 {
   display: inline;
 }
 
+.golden-age-info {
+  font-size: 1.5rem;
+}
+
 header {
   display: flex;
   align-items: center;
