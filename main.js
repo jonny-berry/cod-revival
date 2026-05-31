@@ -29,3 +29,12 @@ document.querySelector('.rsvp-form').addEventListener('submit', async (e) => {
       rsvpButton.innerText = 'RSVP Successful ✔️';
     }
 })
+
+
+document.addEventListener('mousedown', () => {
+  document.body.classList.add('clicking');
+})
+
+document.addEventListener('mouseup', () => {
+  document.body.classList.remove('clicking');
+})

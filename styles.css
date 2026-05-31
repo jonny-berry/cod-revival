@@ -94,6 +94,10 @@ h2 {
   }
 }
 
+.clicking,
+body.clicking * {
+  cursor: url('images/hitmarker.png'), auto !important;
+}
 
 
 .highlight {
